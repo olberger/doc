@@ -18,7 +18,9 @@ This operation is done with a hook and will allow you to launch a backup this wa
 yunohost backup create --method custom
 ```
 
-Below is a simplistic example that can be used to set up a rotational backup with different disks that are changed every week:
+See the [`backup_method` hook documentation](/packaging_apps_hooks#backup-method) for more details on the script's arguments.
+
+Below is a simplistic hook script example that can be used to set up a rotational backup with different disks that are changed every week:
 
 `/etc/yunohost/hooks.d/backup_method/05-custom`
 
